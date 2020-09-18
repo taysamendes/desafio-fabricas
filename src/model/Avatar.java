@@ -13,7 +13,13 @@ public class Avatar {
 	private String cor;
 	private String tamanho;
 	
-	public Avatar() {}
+
+	public Avatar(String nome, int id, float fortuna) {
+		super();
+		this.nome = nome;
+		this.id = id;
+		this.fortuna = fortuna;
+	}
 
 	public String getNome() {
 		return nome;
@@ -81,12 +87,7 @@ public class Avatar {
 
 	@Override
 	public String toString() {
-		return "Avatar [nome=" + nome + ", id=" + id + ", roupa=" + roupa + "]";
+		return "Nome= " + nome + ", id=" + id ;
 	}
-	
-	
-	
-	
-	
-	
+
 }

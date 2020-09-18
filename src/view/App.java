@@ -16,7 +16,7 @@ public class App {
 		else if(sexo.compareTo("masculino")==0)
 			af = new AvatarMasculinoFabrica();
 		
-		Avatar a = new Avatar();
+		Avatar a = new Avatar("Alex",1,5);
 		a.setEstilo(af.montarEstilo());
 		a.setRoupa(af.montarVestimenta());
 		return a;
@@ -24,8 +24,12 @@ public class App {
 	
 	public static void main(String[] args) {
 		Avatar a1 = montarAvatar("feminino");
+		Avatar a2 = montarAvatar("masculino");
+
 		
 		System.out.println("Avatar feminino: "+a1);
+		System.out.println("Avatar masculino: "+a2);
+
 
 	}
 }
