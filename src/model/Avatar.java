@@ -1,8 +1,5 @@
 package model;
 
-//padrao Abstract Factory
-//pq classe abstrata?
-
 public class Avatar {
 	private String nome;
 	private int id;
